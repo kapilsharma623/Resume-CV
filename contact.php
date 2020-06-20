@@ -36,14 +36,11 @@ $name=$_POST['name'];
 $email=$_POST['email'];
 $message=$_POST['message'];
 
-$host="sql211.epizy.com";
-$username="epiz_26057781";
-$password="BOG5lrrAbUxu4b";
-$db="epiz_26057781_resume";
-//$host="127.0.0.1:3325";
-//$username="root";
-//$password="";
-//$db="resume";
+$host="hostname";
+$username="username";
+$password="password";
+$db="dbname";
+
 
 $conn=mysqli_connect($host,$username,$password,$db) or die("conn failed");
 $que="INSERT INTO data (name,email,message) VALUES ('$name','$email','$message');";
